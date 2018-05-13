@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="images/favicon.ico">
+	<title>Medialoot Bootstrap 4 Dashboard Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2">
+				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> Faculty portal</a></h1>
+													
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<li class="nav-item"><a class="nav-link" href="#"><em class="fa fa-pencil-square-o"></em> Formulare</a></li>
+				</ul>
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<li class="nav-item"><a class="nav-link" href="#" id="see-courses"><em class="fa fa-pencil-square-o"></em> Cursuri</a></li>
+				</ul>
+				<a href="login.html" class="logout-button"><em class="fa fa-power-off"></em> Signout</a>
+			</nav>
+			<main class="col-xs-12 col-sm-8 col-lg-9 col-xl-10 pt-3 pl-4 ml-auto">
+				<header class="page-header row justify-center">
+					<div class="col-md-6 col-lg-8" >
+						<h1 class="float-left text-center text-md-left">Dashboard</h1>
+					</div>
+					<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="images/profile-pic.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+						<div class="username mt-1">
+							<h4 class="mb-1">Username</h4>
+							<h6 class="text-muted">Super Admin</h6>
+						</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> View Profile</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Preferences</a>
+						     <a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Logout</a></div>
+					</div>
+					<div class="clear"></div>
+				</header>
+				<section id="f-1">
+				<section class="row">
+						<div class="col-sm-12">
+						<div class="card mb-4">
+									<div class="card-block btn-margins">
+										<button type="button" class="btn btn-md btn-info" id="add-university-form">Adauga facultate</button>
+										<button type="button" class="btn btn-md btn-info" id="add-student-form">Adauga student</button>
+										<button type="button" class="btn btn-md btn-info" id="add-course-form">Adauga cursuri</button>
+										<button type="button" class="btn btn-md btn-info" id="add-universityEmployee-form">Adauga bibliotecar</button>
+									</div>
+								</div>
+						</div>
+					</section>
+				
+				<section class="row spa-form" id="university-form">
+						<div class="col-sm-12">
+						<section class="row">
+							<div class="col-12">
+								<div class="card mb-4">
+									<div class="card-block">
+										<h3 class="card-title">Formular adaugare facultate</h3>
+										<form class="form" action="#">
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Nume facultate</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="faculty-name" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Email biblioteca</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="email-library" class="form-control">
+												</div>
+											</div>
+												<div class="form-group row">
+												<label class="col-md-3 col-form-label">Telefon biblioteca</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="phone-number-library" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Email secretariat</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="secretary-library" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Telefon secretariat</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="phone-number-secretary" class="form-control">
+												</div>
+											</div>
+											<button class="btn btn-primary btn-md float-right" id="add-faculty">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+				
+				<section class="row spa-form" id="student-form">
+						<div class="col-sm-12">
+							<section class="row">
+								<div class="col-12">
+									<div class="card mb-4">
+										<div class="card-block">
+											<h3 class="card-title">Formular adaugare student</h3>
+											<form class="form" action="#">
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Nume</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="first-name" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Prenume</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="second-name" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Email</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="student-email" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Facultate</label>
+													<div class="col-md-9">
+														<select class="custom-select form-control" id="faculty-dropdown">
+															
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Sex</label>
+													<div class="col-md-9">
+														<select class="custom-select form-control" id="gender-dropdown">
+															<option value="1">BARBAT</option>
+															<option value="2">FEMEIE</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">An studiu</label>
+													<div class="col-md-9">
+														<select class="custom-select form-control" id="study-year">
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Status cazare</label>
+													<div class="col-md-9">
+														<select class="custom-select form-control" id="accomodation-status">
+															<option value="0">Fara cazare</option>
+															<option value="1">Cazare in camin</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Username aplicatie</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="username" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Parola aplicatie</label>
+													<div class="col-md-9">
+														<input type="password" name="regular" id="password" class="form-control">
+													</div>
+												</div>
+												<button class="btn btn-primary btn-md float-right" id="add-student">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+				</section>
+				
+				<section class="row spa-form" id="universityEmployee-form">
+						<div class="col-sm-12">
+							<section class="row">
+								<div class="col-12">
+									<div class="card mb-4">
+										<div class="card-block">
+											<h3 class="card-title">Formular adaugare bibliotecar</h3>
+											<form class="form" action="#">
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Nume</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="universityEmployee-first-name" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Prenume</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="universityEmployee-second-name" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Email</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="universityEmployee-email" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Facultate</label>
+													<div class="col-md-9">
+														<select class="custom-select form-control" id="faculty-dropdown-universityEmployee">
+															
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Facultate</label>
+													<div class="col-md-9">
+														<select class="custom-select form-control" id="role">
+															<option value="1">Bibliotecar/a</option>
+															<option value="2">Secretar/a</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Username aplicatie</label>
+													<div class="col-md-9">
+														<input type="text" name="regular" id="universityEmployee-username" class="form-control">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="col-md-3 col-form-label">Parola aplicatie</label>
+													<div class="col-md-9">
+														<input type="password" name="regular" id="universityEmployee-password" class="form-control">
+													</div>
+												</div>
+												<button class="btn btn-primary btn-md float-right" id="add-universityEmployee">Submit</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+				</section>
+
+				<section class="row spa-form" id="course-form">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-12">
+								<div class="card mb-4">
+									<div class="card-block">
+										<h3 class="card-title">Formular adaugare curs</h3>
+										<form class="form" action="#">
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Descriere curs</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="course-description" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">An de studiu</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="studyYear" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Capacitate</label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="capacity" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Tinut de </label>
+												<div class="col-md-9">
+													<input type="text" name="regular" id="maintainedBy" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-md-3 col-form-label">Facultate</label>
+												<div class="col-md-9">
+													<select class="custom-select form-control" id="faculty-dropdown-course">
+
+													</select>
+												</div>
+											</div>
+											<button class="btn btn-primary btn-md float-right" id="add-course">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+				</section>
+
+				<section id="f-2">
+					<section class="row" id="book-table">
+						<div class="col-sm-12">
+							<table class="table">
+								<thead>
+								<tr>
+									<th scope="col">Nume curs</th>
+									<th scope="col">Numar aplicanti</th>
+									<th scope="col">Facultate</th>
+								</tr>
+								</thead>
+								<tbody id="course-list">
+
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</section>
+
+				<section id="f-3">
+					<section class="row" id="participant-table">
+						<div class="col-sm-12">
+							<table class="table">
+								<thead>
+								<tr>
+									<th scope="col">Nume student</th>
+									<th scope="col">An studiu</th>
+									<th scope="col">Facultate</th>
+									<th scope="col"></th>
+									<th scope="col"></th>
+
+								</tr>
+								</thead>
+								<tbody id="participant-list">
+
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</section>
+
+			</main>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+	<script src="js/getObjects.js"></script>
+	<script src="js/forms.js"></script>
+
+ 
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+	 <!-- The Modal -->
+  <div class="modal" id="modal-info">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" id="modal-message">
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-md float-right" data-dismiss="modal">Close</button>
+        </div>
+        
+	</body>
+</html>
